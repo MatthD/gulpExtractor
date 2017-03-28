@@ -1,0 +1,25 @@
+{
+  "name": "testzip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-decompress": "^2.0.1",
+    "gulp-zip": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthD/gulpExtractor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatthD/gulpExtractor/issues"
+  },
+  "homepage": "https://github.com/MatthD/gulpExtractor#readme"
+}
