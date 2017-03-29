@@ -6,15 +6,17 @@ const gulp = require('gulp'),
 gulp.task('zipXml', () => {
   return gulp.src('*.{tar,tar.bz2,tar.gz,zip}')
     .pipe(decompress({
-      filter: file => path.extname(file.path) === '.html'
+      makefolder : true, 
+      strip: 1,
+      filter: file => path.extname(file.path) === '.xml'
     }))
-    .pipe(zip('Metadata.zip'))
+    .pipe(zip('Metadatas.zip'))
     .pipe(gulp.dest('dist'));
 });
 
 gulp.task('unzipAll', () => {
   return gulp.src('*.{tar,tar.bz2,tar.gz,zip}')
-    .pipe(decompress())
+    .pipe(decompress({makefolder : true, strip: 1}))
     .pipe(gulp.dest('unzipped-files'));
 });
 
