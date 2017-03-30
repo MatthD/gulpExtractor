@@ -6,7 +6,7 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-decompress": "https://github.com/MatthD/gulp-decompress.git",
-    "gulp-unzip": "^0.2.0",
+    "gulp-unzip": "https://github.com/MatthD/gulp-unzip",
     "gulp-zip": "^4.0.0"
   },
   "devDependencies": {},
